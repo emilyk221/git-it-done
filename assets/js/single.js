@@ -47,6 +47,7 @@ let displayIssues = function(issues) {
     issueContainerEl.textContent = "This repo has no open issues!";
     return;
   }
+  // loop over given issues
   for (let i = 0; i < issues.length; i++) {
     // create a link element to take users to the issue on github
     let issueEl = document.createElement("a");
